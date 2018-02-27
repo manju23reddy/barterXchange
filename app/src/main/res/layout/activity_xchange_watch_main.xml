@@ -1,0 +1,346 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XchangeWatchMain"
+    android:background="#DDDDDD"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#60AD78"
+        />
+
+    <android.support.v7.widget.cardview
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="7dp"
+        card_view:cardElevation="5dp"
+        android:layout_marginRight="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dip"
+                android:gravity="center_vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textSize="17sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/from_currency"/>
+
+                <Spinner
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:entries="@array/currency"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/from_cur_spinner"
+                    android:prompt="@string/country_prompt"></Spinner>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.5"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/from_cur_detail"
+                    android:text="@string/from_currency"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dip"
+                android:gravity="center_vertical"
+
+                >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textSize="17sp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/to_currency"/>
+
+                <Spinner
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:entries="@array/currency"
+                    android:id="@+id/to_cur_spinner"
+                    android:prompt="@string/country_prompt"></Spinner>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.5"
+                    android:id="@+id/to_cur_details"
+                    android:text="@string/to_currency"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/get_quotes_button"
+                android:layout_gravity="center_horizontal"
+                android:text="Get Quotes"
+                android:background="#43A16F"
+                android:visibility="gone"
+                android:textColor="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_margin="5dip"
+                android:background="#43A16F"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:textColor="#303880"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/conversion_value_from"
+                    android:src="@drawable/aud"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#303880"
+                    android:id="@+id/conversion_Static_to"
+                    android:text="to"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aud"
+                    android:id="@+id/conversion_value_to"
+
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#303880"
+                    android:id="@+id/conversion_Static_equal"
+                    android:text="="
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="5.5"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="#303880"
+                    android:id="@+id/conversion_value_result"
+                    android:text="1 AUD"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_margin="5dip"
+                android:background="#43A16F"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notify_max"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="0dip"
+                        android:layout_weight="1.5"
+                        android:layout_height="48dip"
+                        android:id="@+id/notifyMaxMinus"
+                        android:src="@drawable/minus32"/>
+
+                    <EditText
+                        android:layout_width="0dip"
+                        android:layout_weight="7"
+                        android:text="0000000"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:padding="2dip"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:background="#43A16F"
+                        android:id="@+id/notifyMax"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:layout_height="35dip" />
+
+                    <ImageButton
+                        android:layout_width="0dip"
+                        android:layout_weight="1.5"
+                        android:layout_height="48dip"
+                        android:id="@+id/notifyMaxPlus"
+                        android:src="@drawable/plus32"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notify_min"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_width="0dip"
+                        android:layout_weight="1.5"
+                        android:layout_height="48dip"
+                        android:id="@+id/notifyMinMinus"
+                        android:src="@drawable/minus32"/>
+
+                    <EditText
+                        android:layout_width="0dip"
+                        android:layout_weight="7"
+                        android:text="0000000"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:padding="2dip"
+                        android:textSize="16sp"
+                        android:id="@+id/notifyMin"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:layout_gravity="center_vertical"
+                        android:background="#43A16F"
+                        android:layout_height="35dip" />
+
+                    <ImageButton
+                        android:layout_width="0dip"
+                        android:layout_weight="1.5"
+                        android:id="@+id/notifyMinPlus"
+                        android:layout_height="48dip"
+                        android:src="@drawable/plus32"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/disclaimer"
+                    android:id="@+id/disclaimerText"
+                    android:textSize="10dip"
+                    android:textColor="#999999"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.cardview>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+         />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#43A16F"
+            android:textColor="#FFFFFF"
+            android:enabled="false"
+            android:id="@+id/start_notify_button"
+            android:text="@string/Start_notification"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#444444"
+            android:textColor="#FFFFFF"
+            android:enabled="false"
+            android:id="@+id/stop_notify_button"
+            android:text="@string/Stop_notification"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

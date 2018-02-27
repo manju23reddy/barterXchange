@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">BarterXchange</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="from_currency">From</string>
+    <string name="to_currency">To</string>
+
+    <string name="notify_max">Notify Max</string>
+    <string name="notify_min">Notify Min</string>
+
+    <string name="notification_interval">Notification time interval</string>
+    <string name="notification_interval_minutes">Minutes</string>
+
+    <string name="Start_notification">Start Notification</string>
+    <string name="Stop_notification">Stop Notification</string>
+    <string name="disclaimer">Disclaimer : Conversion rates from Yahoo.com</string>
+
+
+    <string name="update_notification">Update Notification</string>
+
+
+    <string name="country_prompt">Choose a currency</string>
+
+    <string name="Lesser_convertion">Conversion Rate is lesser than minimum </string>
+    <string name="Larger_conversion">Conversion Rate is larger than Maximum </string>
+    <string name="Notification_title">BarterXchange</string>
+
+    <string-array name="currency">
+        <item>AED</item>
+        <item>AUD</item>
+        <item>CAD</item>
+        <item>CHF</item>
+        <item>CNY</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>INR</item>
+        <item>JPY</item>
+        <item>MYR</item>
+        <item>NZD</item>
+        <item>QAR</item>
+        <item>SAR</item>
+        <item>SGD</item>
+        <item>USD</item>
+    </string-array>
+
+    <string-array name="country">
+        <item>United Arab Emirates Dirham</item>
+        <item>Australia Dollar</item>
+        <item>Canada Dollar</item>
+        <item>Switzerland Franc</item>
+        <item>China Yuan Renminbi</item>
+        <item>Euro Member Countries</item>
+        <item>United Kingdom Pound</item>
+        <item>India Rupee</item>
+        <item>Japan Yen</item>
+        <item>Malaysia Ringgit</item>
+        <item>New Zealand Dollar</item>
+        <item>Qatar Riyal</item>
+        <item>Saudi Arabia Riyal</item>
+        <item>Singapore Dollar</item>
+        <item>United States Dollar</item>
+    </string-array>
+</resources>

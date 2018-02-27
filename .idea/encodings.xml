@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/manju/BarterXchange/BarterXChange.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/manju/BarterXchange/Constants.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/manju/BarterXchange/XchangeSavedDataHolder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/manju/BarterXchange/XchangeSharedPrefsHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/manju/BarterXchange/XchangeWatchAlarmManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/manju/BarterXchange/XchangeWatchBCListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/manju/BarterXchange/XchangeWatchHttpGetter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/manju/BarterXchange/XchangeWatchService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_xchange_watch_main.xml" charset="UTF-8" />
+  </component>
+</project>
